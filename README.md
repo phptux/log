@@ -11,7 +11,7 @@ Installation
 ------------
 
 ```bash
-composer require psr/log
+composer require zire/psr-log
 ```
 
 Usage
