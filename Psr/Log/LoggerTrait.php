@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Psr\Log;
 
@@ -138,5 +139,5 @@ trait LoggerTrait
      *
      * @throws \Psr\Log\InvalidArgumentException
      */
-    abstract public function log($level, $message, array $context = []): void;
+    abstract public function log(mixed $level, string $message, array $context = []): void;
 }

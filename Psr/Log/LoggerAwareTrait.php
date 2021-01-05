@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Psr\Log;
 
@@ -12,7 +13,7 @@ trait LoggerAwareTrait
      *
      * @var LoggerInterface
      */
-    protected $logger;
+    protected LoggerInterface $logger;
 
     /**
      * Sets a logger.

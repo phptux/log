@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Psr\Log;
 
@@ -23,7 +24,7 @@ class NullLogger extends AbstractLogger
      *
      * @throws \Psr\Log\InvalidArgumentException
      */
-    public function log($level, string $message, array $context = []): void
+    public function log(mixed $level, string $message, array $context = []): void
     {
         // noop
     }
